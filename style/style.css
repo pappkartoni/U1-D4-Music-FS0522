@@ -12,12 +12,17 @@ body .pinterest-card {
   margin-right: auto;
   border-radius: 20px;
   overflow: hidden;
+  background-color: black;
 }
 body .pinterest-card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+body .pinterest-card img#bird {
+  background-color: black;
+  transition: opacity 1s;
 }
 body .pinterest-card a {
   text-decoration: none;
@@ -117,4 +122,7 @@ body .pinterest-card:hover .savebutton {
 body .pinterest-card:hover .bottombar {
   transform: translateY(0%);
   opacity: 1;
+}
+body .pinterest-card:hover #bird {
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */

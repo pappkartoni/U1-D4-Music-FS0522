@@ -12,13 +12,18 @@ body {
         margin-right: auto;
         border-radius: 20px;
         overflow: hidden;
+        background-color: black;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
 
+            &#bird {
+                background-color: black;
+                transition: opacity 1s;
+            }
+        }
         a {
             text-decoration:none;
             color: inherit;
@@ -120,6 +125,9 @@ body {
             .bottombar {
                 transform: translateY(0%);
                 opacity: 1;
+            }
+            #bird {
+                opacity: 0.8;
             }
         }
     }

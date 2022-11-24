@@ -13,6 +13,17 @@ body .pinterest-card {
   border-radius: 20px;
   overflow: hidden;
 }
+body .pinterest-card:hover {
+  transition-duration: 0.5s;
+}
+body .pinterest-card:hover .savebutton {
+  transform: translateY(0%);
+  opacity: 1;
+}
+body .pinterest-card:hover .bottombar {
+  transform: translateY(0%);
+  opacity: 1;
+}
 body .pinterest-card img {
   width: 100%;
   height: 100%;
@@ -29,6 +40,10 @@ body .pinterest-card .bottombar {
   margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  height: 3rem;
+  opacity: 0;
+  transform: translateY(150%);
+  transition: transform 0.5s;
 }
 body .pinterest-card .bottombar div {
   position: absolute;
@@ -47,7 +62,14 @@ body .pinterest-card .bottombar div.goto {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 55%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7333333333);
+}
+body .pinterest-card .bottombar div.goto img {
+  top: 50%;
+  left: 5%;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: visible;
 }
 body .pinterest-card .bottombar div.more {
   right: 0;
@@ -56,7 +78,7 @@ body .pinterest-card .bottombar div.more {
 body .pinterest-card .bottombar div.more div {
   position: absolute;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.7333333333);
   width: 3rem;
   height: 3rem;
   padding: 5px;
@@ -89,6 +111,9 @@ body .pinterest-card .savebutton {
   margin-right: 1rem;
   padding: 5px 20px 5px 20px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(-150%);
+  transition: transform 0.5s;
 }
 body .pinterest-card .savebutton div {
   display: inline;

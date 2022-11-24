@@ -1,3 +1,101 @@
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+
+    .pinterest-card {
+        position: relative;
+        top: 10vh;
+        width: 400px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bottombar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 5px 0px 5px;
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            //transform: translateY(100%);
+            div {
+                position: absolute;
+                display: inline-block;
+                border-radius: 500px;
+                height: 3rem;
+                line-height: 3rem;
+                //width: 100%;
+                bottom: 0;
+                max-width: 180px;
+                padding: 5px 10px 5px 10px;
+                font-weight: bold;
+
+                &.goto {
+                    left: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 55%;
+                    background-color: #ffffff;
+                }
+                &.more {
+                    right: 0; 
+                    width: 30%;
+                    div {
+                        position: absolute;
+                        display: inline-block;
+                        background-color: #ffffff;
+                        width: 3rem;
+                        height: 3rem;
+                        padding: 5px;
+                        &.dots {
+                            right: 0;
+                        }
+                        &.upload {
+                            left: 0;
+                        }
+                        img {
+                            position: absolute;
+                            top: 25%;
+                            left: 25%;
+                            width: 50%;
+                            height: 50%;
+                            overflow: visible;
+                        }
+                    }
+                }
+            }
+        }
+        .savebutton {
+            position: absolute;
+            line-height: 4rem;
+            background-color: #e70022;
+            color: white;
+            font-weight:bold;
+            font-size: 1.5rem;
+            border-radius: 500px;
+            top: 0;         
+            right: 0;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            padding: 5px 20px 5px 20px;
+            text-align: center;
+            //transform: translateY(-100%);
+            div {
+                display: inline;
+            }
+        }
+    }
 }
